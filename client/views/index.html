@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
@@ -13,7 +13,13 @@
         <h1 class="lead">ANGULAR!</h1>
     </div>
 
+    <ng-include src="'/assets/views/welcome.html'"></ng-include>
+    <!--<div ng-include="'/assets/views/welcome.html'"></div>-->
+
+    <div></div>
+
     <!--SCRIPTS-->
-    <script src="/assets/scripts/app.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
 </body>
 </html>
